@@ -1,0 +1,47 @@
+
+
+
+
+
+<section class="section__wrapper
+                  section
+                  "> <div class="container"> <div id="shopify-section-page__main" class="shopify-section page-main has-sidebar-option">
+
+
+
+  
+
+  
+
+
+
+<main class="
+            is-width-standard
+            "> <div class="container page__container">
+    
+      
+
+    {% unless template contains 'page.banner' %}
+      {% include 'heading', title: page.title, heading_tag: 'h1', context: 'page', text_alignment: 'left' %}
+    {% endunless %}</div> 
+  
+  
+  <div class="page__content content container  table is-striped is-bordered ">
+      <div id='ZoomyWishlistPage'></div><script src='https://zooomyapps.com/wishlist/ListWishlist.js' data-shop-id='{{shop.permanent_domain}}' data-customer-id='{{customer.id}}'></script>
+
+  </div>
+</main>
+
+
+
+
+</div></div></section>
+
+
+<style>
+  
+  .section__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+</style>
